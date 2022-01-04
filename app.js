@@ -29,7 +29,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/health', ()=> {
+app.use('/health', (req, res)=> {
     res.status(200).json({
         message : 'hey the app is running'
     })
