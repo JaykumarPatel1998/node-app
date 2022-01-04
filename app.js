@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const databaseUri = "mongodb+srv://jaykumar:patel@node-app-db.x805v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const databaseUri = "mongodb+srv://<username>:<password>@node-app-db.x805v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
