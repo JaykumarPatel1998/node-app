@@ -29,6 +29,12 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use('/health', ()=> {
+    res.status(200).json({
+        message : 'hey the app is running'
+    })
+})
+
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 app.use('/user', userRoutes);
